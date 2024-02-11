@@ -19,7 +19,7 @@ export function Home() {
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-[url('/img/Educacion.webp')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
@@ -34,7 +34,7 @@ export function Home() {
               <Typography variant="lead" color="white" className="opacity-80">
                 
 
-              "Modelando el Futuro con Instrucción a Medida para un Desarrollo Óptimo."
+              "Conéctate con tu conocimiento: Donde aprender y enseñar se encuentran"
               </Typography>
             </div>
           </div>
@@ -57,7 +57,7 @@ export function Home() {
           </div>
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
+              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 p-2 text-center shadow-lg">
                 <FingerPrintIcon className="h-8 w-8 text-white " />
               </div>
               <Typography
@@ -73,30 +73,28 @@ export function Home() {
                 <br />
                 Únete a nosotros en este viaje educativo, donde en Educatio modelamos el futuro a través de una educación a medida para el desarrollo óptimo. 
               </Typography>
-              <Button variant="filled">read more</Button>
+              {/* <Button variant="filled">Lee mas</Button> */}
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
                 <CardHeader floated={false} className="relative h-56">
                   <img
                     alt="Card Image"
-                    src="/img/teamwork.png"
+                    src="/img/Educacion.jpg"
                     className="h-full w-full"
                   />
                 </CardHeader>
                 <CardBody>
-                  <Typography variant="small" color="blue-gray" className="font-normal">Enterprise</Typography>
+                  <Typography variant="small" color="blue-gray" className="font-normal">Empresa</Typography>
                   <Typography
                     variant="h5"
                     color="blue-gray"
                     className="mb-3 mt-2 font-bold"
                   >
-                    Top Notch Services
+                    Servicios de Primera Clase
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                  En un mundo donde el conocimiento es el motor del progreso, nosotros creamos puentes entre mentes ávidas de aprender y expertos deseosos de enseñar. Con nuestra plataforma, la educación trasciende barreras y se convierte en un viaje colaborativo donde cada experiencia de aprendizaje es única.
                   </Typography>
                 </CardBody>
               </Card>
@@ -106,10 +104,8 @@ export function Home() {
       </section>
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
-          <PageTitle section="Our Team" heading="Here are our heroes">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
+          <PageTitle section="Nuestro Equipo" heading="¡Aquí tienes a nuestros talentos!">
+            En nuestro equipo, cada uno de nosotros desempeña un papel crucial para alcanzar nuestros objetivos y hacer realidad nuestra visión. Permitenos presentar a los increíbles individuos que conforman nuestro equipo:
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
@@ -134,10 +130,8 @@ export function Home() {
       </section>
       <section className="relative bg-white py-24 px-4">
         <div className="container mx-auto">
-          <PageTitle section="Co-Working" heading="Build something">
-            Put the potentially record low maximum sea ice extent tihs year down
-            to low ice. According to the National Oceanic and Atmospheric
-            Administration, Ted, Scambos.
+          <PageTitle section="Trabajo en Colaboración" heading="Construyamos algo juntos">
+          En Educatio, valoramos la colaboración y el trabajo en equipo. Nuestra aplicación brinda un espacio donde estudiantes y educadores pueden unir fuerzas para alcanzar sus metas educativas. Desde la creación de contenido hasta la participación en clases virtuales, cada acción realizada en Educatio refleja el esfuerzo conjunto de nuestra comunidad educativa. ¡Juntos, construyamos un futuro más brillante a través del aprendizaje colaborativo en Educatio
           </PageTitle>
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
             {contactData.map(({ title, icon, description }) => (
@@ -147,7 +141,7 @@ export function Home() {
                 shadow={false}
                 className="text-center text-blue-gray-900"
               >
-                <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-blue-gray-900 shadow-lg shadow-gray-500/20">
+                <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-blue-600 shadow-lg shadow-gray-500/20">
                   {React.createElement(icon, {
                     className: "w-5 h-5 text-white",
                   })}
@@ -161,15 +155,15 @@ export function Home() {
               </Card>
             ))}
           </div>
-          <PageTitle section="Contact Us" heading="Want to work with us?">
-            Complete this form and we will get back to you in 24 hours.
+          <PageTitle section="Contáctanos" heading="¿Tienes dudas sobre nosotros?">
+          Completa este formulario y nos pondremos en contacto contigo en 24 horas.
           </PageTitle>
           <form className="mx-auto w-full mt-12 lg:w-5/12">
             <div className="mb-8 flex gap-8">
-              <Input variant="outlined" size="lg" label="Full Name" />
-              <Input variant="outlined" size="lg" label="Email Address" />
+              <Input variant="outlined" size="lg" label="Nombre Completo" />
+              <Input variant="outlined" size="lg" label="Correo Electronico" />
             </div>
-            <Textarea variant="outlined" size="lg" label="Message" rows={8} />
+            <Textarea variant="outlined" size="lg" label="Mensaje" rows={8} />
             <Checkbox
               label={
                 <Typography
@@ -177,19 +171,19 @@ export function Home() {
                   color="gray"
                   className="flex items-center font-normal"
                 >
-                  I agree the
+                  Estoy de acuerdo con los 
                   <a
                     href="#"
                     className="font-medium transition-colors hover:text-gray-900"
                   >
-                    &nbsp;Terms and Conditions
+                    &nbsp;Términos y Condiciones
                   </a>
                 </Typography>
               }
               containerProps={{ className: "-ml-2.5" }}
             />
-            <Button variant="gradient" size="lg" className="mt-8" fullWidth>
-              Send Message
+            <Button variant="gradient" color="blue" size="lg" className="mt-8" fullWidth>
+              Enviar Mensaje
             </Button>
           </form>
         </div>

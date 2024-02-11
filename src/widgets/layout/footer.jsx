@@ -79,64 +79,64 @@ export function Footer({ title, description, socials, menus, copyright }) {
 }
 
 Footer.defaultProps = {
-  title: "Material Tailwind",
+  title: "Material Educatio",
   description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+    "Encuéntranos en nuestras diferentes redes sociales.",
   socials: [
     {
       color: "gray",
       name: "twitter",
-      path: "https://www.twitter.com/creativetim",
+      path: "https://github.com/lisbethceron1/web.git",
     },
     {
       color: "gray",
       name: "youtube",
-      path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+      path: "https://github.com/lisbethceron1/web.git",
     },
     {
       color: "gray",
       name: "instagram",
-      path: "https://www.instagram.com/creativetimofficial/",
+      path: "https://github.com/lisbethceron1/web.git",
     },
     {
       color: "black",
       name: "github",
-      path: "https://github.com/creativetimofficial/material-tailwind",
+      path: "https://github.com/lisbethceron1/web.git",
     },
   ],
   menus: [
     {
-      name: "useful links",
+      name: "Enlaces útiles",
       items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
+        { name: "Nosotros", path: "https://www.creative-tim.com/presentation" },
         { name: "Blog", path: "https://www.creative-tim.com/blog" },
         {
           name: "Github",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
+          path: "https://github.com/lisbethceron1/web.git",
         },
-        {
-          name: "Free Products",
-          path: "https://www.creative-tim.com/templates/free?ref=mtk",
-        },
+        // {
+        //   name: "Free Products",
+        //   path: "https://www.creative-tim.com/templates/free?ref=mtk",
+        // },
       ],
     },
     {
-      name: "other resources",
+      name: "Otros Recursos",
       items: [
         {
-          name: "MIT License",
+          name: "Licencia MIT",
           path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
         },
         {
-          name: "Contribute",
+          name: "Contribuir",
           path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
         },
         {
-          name: "Change Log",
+          name: "Registro de cambios",
           path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
         },
         {
-          name: "Contact Us",
+          name: "Contáctanos",
           path: "https://creative-tim.com/contact-us?ref=mtk",
         },
       ],
@@ -144,13 +144,13 @@ Footer.defaultProps = {
   ],
   copyright: (
     <>
-      Copyright © {year} Material Tailwind by{" "}
+      Copyright © {year} Educatio by{"  "}
       <a
-        href="https://www.creative-tim.com?ref=mtk"
+        href="https://github.com/lisbethceron1/web.git"
         target="_blank"
         className="text-blue-gray-500 transition-colors hover:text-blue-500"
       >
-        Creative Tim
+         Team
       </a>
       .
     </>
