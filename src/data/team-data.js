@@ -27,6 +27,7 @@ export const teamData = [
     img: "/img/team-1.jpg",
     name: "Contraoferta",
     position: "En nuestra plataforma, los estudiantes tienen la libertad de publicar sus requisitos de clase y recibir múltiples ofertas de instructores. Esta modalidad única permite a los estudiantes comparar precios, ubicaciones y condiciones de enseñanza antes de comprometerse.",
+    textAlign: "left",
     socials: [
       
     ],
