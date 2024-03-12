@@ -9,17 +9,18 @@ export function TeamCard({ img, name, position, socials }) {
         alt={name}
         size="xxl"
         variant="rounded"
-        className="h-full w-full shadow-lg shadow-gray-500/25"
+        className=" shadow-lg shadow-gray-500/25"
+        style={{ margin: 'auto' }}
       />
-      <Typography variant="h5" color="blue-gray" className="mt-6 mb-1">
+      <Typography variant="h5" color="blue-gray" className="mt-4 mb-1">
         {name}
       </Typography>
       {position && (
-        <Typography className="font-bold text-blue-gray-500">
+        <Typography className="">
           {position}
         </Typography>
       )}
-      {socials && <div className="mx-auto mt-5">{socials}</div>}
+    
     </Card>
   );
 }
@@ -33,7 +34,6 @@ TeamCard.propTypes = {
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   position: PropTypes.string,
-  socials: PropTypes.node,
 };
 
 TeamCard.displayName = "/src/widgets/layout/team-card.jsx";
