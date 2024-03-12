@@ -5,14 +5,14 @@ const year = new Date().getFullYear();
 
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
-    <footer className="relative px-4 pt-8 pb-6">
+    <footer className="relative px-1 pt-5 pb-7 rounded-lg shadow-xl" style={{ backgroundColor: '#1AA7F6', color: 'white',boxShadow: '0px 10px 15px -3px rgba(4, 0, 0, 0.6), 0px 4px 6px -2px rgba(4, 0, 0, 0.09)'  }}>
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
             <Typography variant="h4" className="mb-4" color="blue-gray">
               {title}
             </Typography>
-            <Typography className="font-normal text-blue-gray-500 lg:w-2/5">
+            <Typography style={{ color: 'white' }} className="font-normal text-blue-gray-500 lg:w-2/5">
               {description}
             </Typography>
             <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
@@ -22,11 +22,14 @@ export function Footer({ title, description, socials, menus, copyright }) {
                   href={path}
                   target="_blank"
                   rel="noopener noreferrer"
+                  
                 >
                   <IconButton color="white" className="rounded-full shadow-none bg-transparent">
-                    <Typography color={color}>
+                    <Typography color={color} style={{ color: 'white' }}>
+                      
                       <i className={`fa-brands fa-${name}`} />
                     </Typography>
+                    
                   </IconButton>
                 </a>
               ))}
@@ -36,6 +39,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
             {menus.map(({ name, items }) => (
               <div key={name}>
                 <Typography
+                style={{ color: 'black' }}
                   variant="small"
                   color="blue-gray"
                   className="mb-2 block font-medium uppercase"
@@ -46,6 +50,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
                   {items.map((item) => (
                     <li key={item.name}>
                       <Typography
+                      style={{ color: 'white' }}
                         as="a"
                         href={item.path}
                         target="_blank"
@@ -66,6 +71,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
         <div className="flex flex-wrap items-center justify-center md:justify-between">
           <div className="mx-auto w-full px-4 text-center">
             <Typography
+            style={{ color: 'white' }}
               variant="small"
               className="font-normal text-blue-gray-500"
             >

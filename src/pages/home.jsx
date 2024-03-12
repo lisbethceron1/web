@@ -139,7 +139,7 @@ export function Home() {
           <PageTitle section="Contáctanos" heading="¿Tienes dudas sobre nosotros?">
           Completa este formulario y nos pondremos en contacto contigo en 24 horas.
           </PageTitle>
-          <form className="mx-auto w-full mt-12 lg:w-5/12">
+          <form className="mx-auto w-full mt-12 lg:w-5/12 "style={{ marginBottom: '24px' }}>
             <div className="mb-8 flex gap-8">
               <Input variant="outlined" size="lg" label="Nombre Completo" />
               <Input variant="outlined" size="lg" label="Correo Electronico" />
