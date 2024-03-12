@@ -104,8 +104,8 @@ export function Home() {
       </section>
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
-          <PageTitle section="Nuestro Equipo" heading="¡Aquí tienes a nuestros talentos!">
-            En nuestro equipo, cada uno de nosotros desempeña un papel crucial para alcanzar nuestros objetivos y hacer realidad nuestra visión. Permitenos presentar a los increíbles individuos que conforman nuestro equipo:
+          <PageTitle section="Nuestros servicios" heading="¡Explora nuestras soluciones personalizadas que se adaptan a tus requerimientos!">
+            En nuestro equipo, cada uno de nosotros desempeña un papel crucial para alcanzar nuestros objetivos y hacer realidad nuestra visión. Permitenos presentar nuestros servicios:
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
@@ -128,33 +128,14 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="relative bg-white py-24 px-4">
+      <section className="relative bg-white py-17 px-4">
         <div className="container mx-auto">
           <PageTitle section="Trabajo en Colaboración" heading="Construyamos algo juntos">
           En Educatio, valoramos la colaboración y el trabajo en equipo. Nuestra aplicación brinda un espacio donde estudiantes y educadores pueden unir fuerzas para alcanzar sus metas educativas. Desde la creación de contenido hasta la participación en clases virtuales, cada acción realizada en Educatio refleja el esfuerzo conjunto de nuestra comunidad educativa. ¡Juntos, construyamos un futuro más brillante a través del aprendizaje colaborativo en Educatio
           </PageTitle>
-          <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
-            {contactData.map(({ title, icon, description }) => (
-              <Card
-                key={title}
-                color="transparent"
-                shadow={false}
-                className="text-center text-blue-gray-900"
-              >
-                <div className="mx-auto mb-6 grid h-14 w-14 place-items-center rounded-full bg-blue-600 shadow-lg shadow-gray-500/20">
-                  {React.createElement(icon, {
-                    className: "w-5 h-5 text-white",
-                  })}
-                </div>
-                <Typography variant="h5" color="blue-gray" className="mb-2">
-                  {title}
-                </Typography>
-                <Typography className="font-normal text-blue-gray-500">
-                  {description}
-                </Typography>
-              </Card>
-            ))}
-          </div>
+          <div className="mx-auto mt-10 mb-24 grid max-w-4xl grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+</div>
+
           <PageTitle section="Contáctanos" heading="¿Tienes dudas sobre nosotros?">
           Completa este formulario y nos pondremos en contacto contigo en 24 horas.
           </PageTitle>
