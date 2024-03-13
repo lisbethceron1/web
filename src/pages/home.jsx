@@ -34,40 +34,41 @@ export function Home() {
               <Typography variant="lead" color="white" className="opacity-80">
                 
 
-              "Conéctate con tu conocimiento: Donde aprender y enseñar se encuentran"
+              ¡Explora el potencial del saber: Donde convergen la instrucción y el aprendizaje en un entorno educativo de excelencia!
               </Typography>
             </div>
           </div>
         </div>
       </div>
-      <section className="-mt-32 bg-white px-4 pb-20 pt-4">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <section className="-mt-32 bg-white px-8 pb-29 pt-8 shadow-${shadowIntensity}  shadow-gray-900/10 rounded-xl">
+        <div className="container mx-auto ">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-5 lg:grid-cols-3 ">
             {featuresData.map(({ color, title, icon, description }) => (
               <FeatureCard
                 key={title}
                 color={color}
                 title={title}
                 icon={React.createElement(icon, {
-                  className: "w-5 h-5 text-white",
+                  className: `w-5 h-9 text-white `,
                 })}
                 description={description}
+               
               />
             ))}
           </div>
           <div className="mt-32 flex flex-wrap items-center">
-            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 p-2 text-center shadow-lg">
+            <div className="mx-auto -mt-8 w-full px-4 md:w-5/12  "  >
+              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 p-2 text-center " >
                 <FingerPrintIcon className="h-8 w-8 text-white " />
               </div>
               <Typography
                 variant="h3"
-                className="mb-3 font-bold"
-                color="blue-gray"
+                className="mb-3 font-bold text-blue-600  " 
+             
               >
                 Nosotros
               </Typography>
-              <Typography className="mb-8 font-normal text-blue-gray-500">
+              <Typography className="mb-8 font-bold text-gray-700  "    >
               En Educatio, nos dedicamos a potenciar el desarrollo único de cada estudiante a través de una educación personalizada. Como líderes innovadores, buscamos transformar vidas, preparando a los estudiantes para destacar en un mundo en constante cambio. Guiados por valores de excelencia, respeto, integridad, innovación y colaboración, creamos un entorno donde la diversidad y la creatividad florecen. 
                 <br />
                 <br />
@@ -76,7 +77,7 @@ export function Home() {
               {/* <Button variant="filled">Lee mas</Button> */}
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-              <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
+              <Card className="shadow-${shadowIntensity}shadow-lg rounded-xl p- bg-gray-200 " >
                 <CardHeader floated={false} className="relative h-56">
                   <img
                     alt="Card Image"
@@ -85,15 +86,15 @@ export function Home() {
                   />
                 </CardHeader>
                 <CardBody>
-                  <Typography variant="small" color="blue-gray" className="font-normal">Empresa</Typography>
+                  <Typography variant="small" color="blue-gray" className="font-normal"></Typography>
                   <Typography
                     variant="h5"
                     color="blue-gray"
-                    className="mb-3 mt-2 font-bold"
+                    className="mb-3 mt-2 text-blue-600 "
                   >
                     Servicios de Primera Clase
                   </Typography>
-                  <Typography className="font-normal text-blue-gray-500">
+                  <Typography className="font-normal">
                   En un mundo donde el conocimiento es el motor del progreso, nosotros creamos puentes entre mentes ávidas de aprender y expertos deseosos de enseñar. Con nuestra plataforma, la educación trasciende barreras y se convierte en un viaje colaborativo donde cada experiencia de aprendizaje es única.
                   </Typography>
                 </CardBody>
@@ -102,9 +103,9 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
-        <div className="container mx-auto">
-          <PageTitle section="Nuestros servicios" heading="¡Explora nuestras soluciones personalizadas que se adaptan a tus requerimientos!">
+      <section className="px-4 pt-20 pb-48"style ={{color:'blue'}}>
+        <div className="container mx-auto"style ={{color:'blue'}}>
+          <PageTitle  section="Nuestros servicios"  heading ="¡Explora nuestras soluciones personalizadas que se adaptan a tus requerimientos!"style ={{color:'blue'}} >
             En nuestro equipo, cada uno de nosotros desempeña un papel crucial para alcanzar nuestros objetivos y hacer realidad nuestra visión. Permitenos presentar nuestros servicios:
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">

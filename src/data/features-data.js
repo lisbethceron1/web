@@ -9,6 +9,7 @@ export const featuresData = [
     icon: ChatBubbleBottomCenterTextIcon,
     description:
     "Facilitar un ambiente educativo dinámico y personalizado, donde cada estudiante descubre su potencial único, desarrolla habilidades excepcionales y se prepara para enfrentar los desafíos del mundo con confianza y excelencia",
+    shadow: "2xl",
   },
   {
     color: "blue",

@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
-    <footer className="relative px-1 pt-5 pb-7 rounded-lg shadow-xl" style={{ backgroundImage: `url('../../../public/img/fondo.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', color: 'white',boxShadow: '0px 10px 15px -3px rgba(4, 0, 0, 0.6), 0px 4px 6px -2px rgba(4, 0, 0, 0.09)'  }}>
+    <footer className="relative px-1 pt-5 pb-7 rounded-lg shadow-xl"  style={{ backgroundImage: `url('../../../public/img/fondo.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', color: 'white',boxShadow: '0px 10px 15px -3px rgba(4, 0, 0, 0.6), 0px 4px 6px -2px rgba(4, 0, 0, 0.09)'  }}>
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
