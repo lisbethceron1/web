@@ -7,11 +7,11 @@ export function TeamCard({ img, name, position, socials }) {
       color="transparent"
       className="mb-5 font-bold text-gray-900 p-4 w-64 md:w-72 lg:w-93 mx-auto"
       style={{
-        backgroundImage: `url('../../../public/img/azull.jpg')`,
+        backgroundColor: `#a8cef4`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: 'white',
-        boxShadow: '0px 9px 2px -4px rgba(4, , , 0.7), 8px 8px 8px -2px rgba(4, 0, 0, 0.09)',
+        boxShadow: '9px 4px 1px -1px rgba(0, 0, 0, 0.2)',
       }}
     >
       <div className="text-center">
@@ -21,7 +21,7 @@ export function TeamCard({ img, name, position, socials }) {
           
           variant="rounded"
           className="shadow-md mb-3 xl-auto"
-          style={{ width: '290px', height: '190px',boxShadow: '9px 9px 2px rgba(0, 0, 0, 0.2)' }}
+          style={{ width: '230px', height: '200px',boxShadow: '0px 4px 2px 2px rgba(0, 0, 0, 0.2)' }}
         />
         <Typography variant="h5" color="blue-gray" className="mb-2 text-lg font-bold">
           {name}
