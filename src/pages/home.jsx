@@ -180,7 +180,7 @@ export function Home() {
         autoplay={true}
         autoplaySpeed={4000}
         
-        style={{ maxWidth: "9000px", width: "100%", margin: "0 auto" ,   backgroundColor: "blue" }} // Ajusta el ancho del contenedor del carrusel
+        style={{ maxWidth: "9000px", width: "100%", margin: "0 auto" ,   }} // Ajusta el ancho del contenedor del carrusel
       >
         <div > {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
           <Card style={{backgroundColor:''  }}>
