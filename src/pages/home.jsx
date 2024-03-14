@@ -124,19 +124,18 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48" style={{ color: "blue" }}>
+      <section className="px-4 pt-20 pb-4" style={{ color: "blue" }}>
         {/* Team section with carousel */}
-        <div className="container mx-auto" style={{ color: "blue" }}>
-          <PageTitle
+        <div className="container sm-auto" style={{ color: "blue" }}>
+          
+          <PageTitle className="" 
             section="Nuestros servicios"
             heading="¡Explora nuestras soluciones personalizadas que se adaptan a tus requerimientos!"
-            style={{ color: "blue" }}
+         
           >
             En nuestro equipo, cada uno de nosotros desempeña un papel crucial para alcanzar nuestros objetivos y hacer realidad nuestra visión. Permitenos presentar nuestros servicios:
-          </PageTitle>
-          <PageTitle>
-            <br></br>
-          </PageTitle>
+          </PageTitle><br></br>
+        
           <Slider {...settings}>
             {teamData.map(({ img, name, position, socials }) => (
               <div key={name}>
@@ -158,18 +157,91 @@ export function Home() {
             ))}
           </Slider>
         </div>
-      </section>
-      <section className="relative bg-white py-17 px-4">
-        {/* Collaboration section */}
-        <div className="container mx-auto">
-          <PageTitle section="Trabajo en Colaboración" heading="Construyamos algo juntos">
-            En Educatio, valoramos la colaboración y el trabajo en equipo. Nuestra aplicación brinda un espacio donde estudiantes y educadores pueden unir fuerzas para alcanzar sus metas educativas. Desde la creación de contenido hasta la participación en clases virtuales, cada acción realizada en Educatio refleja el esfuerzo conjunto de nuestra comunidad educativa. ¡Juntos, construyamos un futuro más brillante a través del aprendizaje colaborativo en Educatio
-          </PageTitle>
-          <div className="mx-auto mt-10 mb-24 grid max-w-4xl grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {/* Content */}
-          </div>
+      </section><br></br>
+      <section className="px-4 pt-20 pb-48" style={{ color: "blue" }}>
+  {/* Collaboration section */}
+  <div className="container mx-auto" style={{ color: "blue" }}>
+    <div style={{ width: "1500px",height:'1px', margin:'10px' }}>
+    <PageTitle section="Trabajo en Colaboración" heading="Construyamos algo juntos"><br></br>
+      Educatio facilita la colaboración entre estudiantes y educadores para explorar una variedad de materias y temas. Cada interacción refleja nuestro compromiso colectivo. Juntos, construimos un futuro educativo brillante en Educatio.
+    </PageTitle>
+    </div>
+    
+    <div className="mt-10 mb-24 grid max-w-5xl grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+      {/* Content for new carousel */}
+      <Slider
+        dots={false}
+        infinite={true}
+        speed={500}
+        slidesToShow={1}
+        slidesToScroll={1}
+        autoplay={true}
+        autoplaySpeed={4000}
+        style={{ maxWidth: "9000px", width: "100%", margin: "0 auto" , color:'blue'}} // Ajusta el ancho del contenedor del carrusel
+      >
+        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card>
+            <CardHeader floated={false} className="relative h-56">
+              <img
+                alt="Carousel Image 1"
+                src="/img/ingles.jpg" // Ruta de la imagen para el primer item del carrusel
+                className="h-full w-full object-cover"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
+                Clases de Ingles
+              </Typography>
+              <Typography className="font-normal">
+              Aprende inglés diseñada para todos los niveles, desde principiantes hasta avanzados
+              </Typography>
+            </CardBody>
+          </Card>
         </div>
-      </section>
+        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card>
+            <CardHeader floated={false} className="relative h-56">
+              <img
+                alt="Carousel Image 2"
+                src="/img/matematicas.jpg" // Ruta de la imagen para el segundo item del carrusel
+                className="h-full w-full object-cover"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
+                Clases de matematicas
+              </Typography>
+              <Typography className="font-normal">
+              Clases de matemáticas adaptadas a todos los niveles, desde primaria hasta secundaria y más allá.
+              </Typography>
+            </CardBody>
+          </Card>
+        </div>
+        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card>
+            <CardHeader floated={false} className="relative h-56">
+              <img
+                alt="Carousel Image 3"
+                src="/img/musica.jpg" // Ruta de la imagen para el tercer item del carrusel
+                className="h-full w-full object-cover"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
+                Clases de musica
+              </Typography>
+              <Typography className="font-normal">
+              Clases de música diseñadas para todos los niveles, desde principiantes hasta músicos avanzados.
+              </Typography>
+            </CardBody>
+          </Card>
+        </div>
+        {/* Agrega más imágenes y contenido según sea necesario */}
+      </Slider>
+    </div>
+  </div>
+</section>
+
       <section className="px-4 pt-20 pb-48" style={{ color: "blue" }}>
         {/* Contact section */}
         <div className="container mx-auto" style={{ color: "blue" }}>
