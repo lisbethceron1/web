@@ -163,7 +163,7 @@ export function Home() {
       <section className="px-4 pt-20 pb-48" style={{ color: "blue" ,}}>
   {/* Collaboration section */}
   <div className="container mx-auto" style={{ color: "blue", }}>
-    <div style={{ width: "1500px",height:'1px', margin:'10px', }}>
+    <div style={{ width: "1500px",height:'1px', margin:'10px', }}><br></br><br></br><br></br>
     <PageTitle section="Trabajo en Colaboración" heading="Construyamos algo juntos"><br></br>
       Educatio facilita la colaboración entre estudiantes y educadores para explorar una variedad de materias y temas. Cada interacción refleja nuestro compromiso colectivo. Juntos, construimos un futuro educativo brillante en Educatio.
     </PageTitle>
