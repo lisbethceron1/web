@@ -136,7 +136,9 @@ export function Home() {
             En nuestro equipo, cada uno de nosotros desempeña un papel crucial para alcanzar nuestros objetivos y hacer realidad nuestra visión. Permitenos presentar nuestros servicios:
           </PageTitle><br></br>
         
-          <Slider {...settings}>
+          <Slider {...settings}
+          >
+            
             {teamData.map(({ img, name, position, socials }) => (
               <div key={name}>
                 <TeamCard
@@ -158,16 +160,16 @@ export function Home() {
           </Slider>
         </div>
       </section><br></br>
-      <section className="px-4 pt-20 pb-48" style={{ color: "blue" }}>
+      <section className="px-4 pt-20 pb-48" style={{ color: "blue" ,}}>
   {/* Collaboration section */}
-  <div className="container mx-auto" style={{ color: "blue" }}>
-    <div style={{ width: "1500px",height:'1px', margin:'10px' }}>
+  <div className="container mx-auto" style={{ color: "blue", }}>
+    <div style={{ width: "1500px",height:'1px', margin:'10px', }}>
     <PageTitle section="Trabajo en Colaboración" heading="Construyamos algo juntos"><br></br>
       Educatio facilita la colaboración entre estudiantes y educadores para explorar una variedad de materias y temas. Cada interacción refleja nuestro compromiso colectivo. Juntos, construimos un futuro educativo brillante en Educatio.
     </PageTitle>
     </div>
     
-    <div className="mt-10 mb-24 grid max-w-5xl grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-100 mb-21 grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
       {/* Content for new carousel */}
       <Slider
         dots={false}
@@ -177,10 +179,11 @@ export function Home() {
         slidesToScroll={1}
         autoplay={true}
         autoplaySpeed={4000}
-        style={{ maxWidth: "9000px", width: "100%", margin: "0 auto" , color:'blue'}} // Ajusta el ancho del contenedor del carrusel
+        
+        style={{ maxWidth: "9000px", width: "100%", margin: "0 auto" ,   backgroundColor: "blue" }} // Ajusta el ancho del contenedor del carrusel
       >
-        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
-          <Card>
+        <div > {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card style={{backgroundColor:''  }}>
             <CardHeader floated={false} className="relative h-56">
               <img
                 alt="Carousel Image 1"
@@ -242,46 +245,48 @@ export function Home() {
   </div>
 </section>
 
-      <section className="px-4 pt-20 pb-48" style={{ color: "blue" }}>
-        {/* Contact section */}
-        <div className="container mx-auto" style={{ color: "blue" }}>
-          <PageTitle
-            section="Contáctanos"
-            heading="¿Tienes dudas sobre nosotros?"
-            style={{ color: "blue" }}
+<section className="px-4 pt-0 pb-12" style={{ color: "blue" }}>
+  {/* Contact section */}
+  <div className="container mx-auto" style={{ color: "blue" }}>
+    <PageTitle
+      section="Contáctanos"
+      heading="¿Tienes dudas sobre nosotros?"
+      style={{ color: "blue" }}
+    >
+      Completa este formulario y nos pondremos en contacto contigo en 24 horas.
+    </PageTitle>
+    <form className="mx-auto w-full mt-0 lg:w-5/12" style={{ marginBottom: '12px', marginTop: '0' }}>
+      <div className="mb-2 flex gap-2">
+        <Input variant="outlined" size="sm" label="Nombre Completo" />
+        <Input variant="outlined" size="sm" label="Correo Electrónico" />
+      </div>
+      <Textarea variant="outlined" size="sm" label="Mensaje" rows={4} />
+      <Checkbox
+        label={
+          <Typography
+            variant="small"
+            color="gray"
+            className="flex items-center font-normal"
           >
-            Completa este formulario y nos pondremos en contacto contigo en 24 horas.
-          </PageTitle>
-          <form className="mx-auto w-full mt-12 lg:w-5/12 " style={{ marginBottom: '24px' }}>
-            <div className="mb-8 flex gap-8">
-              <Input variant="outlined" size="lg" label="Nombre Completo" />
-              <Input variant="outlined" size="lg" label="Correo Electronico" />
-            </div>
-            <Textarea variant="outlined" size="lg" label="Mensaje" rows={8} />
-            <Checkbox
-              label={
-                <Typography
-                  variant="small"
-                  color="gray"
-                  className="flex items-center font-normal"
-                >
-                  Estoy de acuerdo con los 
-                  <a
-                    href="#"
-                    className="font-medium transition-colors hover:text-gray-900"
-                  >
-                    &nbsp;Términos y Condiciones
-                  </a>
-                </Typography>
-              }
-              containerProps={{ className: "-ml-2.5" }}
-            />
-            <Button variant="gradient" color="blue" size="lg" className="mt-8" fullWidth>
-              Enviar Mensaje
-            </Button>
-          </form>
-        </div>
-      </section>
+            Estoy de acuerdo con los
+            <a
+              href="#"
+              className="font-medium transition-colors hover:text-gray-900"
+            >
+              &nbsp;Términos y Condiciones
+            </a>
+          </Typography>
+        }
+        containerProps={{ className: "-ml-2" }}
+      />
+      <Button variant="gradient" color="blue" size="sm" className="mt-2" fullWidth>
+        Enviar Mensaje
+      </Button>
+    </form>
+  </div>
+</section>
+
+
       <div className="bg-white">
         <Footer />
       </div>
