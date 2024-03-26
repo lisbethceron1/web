@@ -193,10 +193,10 @@ export function Home() {
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
-                Clases de Ingles
+                Clases de Idiomas
               </Typography>
               <Typography className="font-normal">
-              Aprende inglés diseñada para todos los niveles, desde principiantes hasta avanzados
+              Aprende idiomas diseñados para todos los niveles, desde principiantes hasta avanzados
               </Typography>
             </CardBody>
           </Card>
@@ -235,6 +235,68 @@ export function Home() {
               </Typography>
               <Typography className="font-normal">
               Clases de música diseñadas para todos los niveles, desde principiantes hasta músicos avanzados.
+              </Typography>
+            </CardBody>
+          </Card>
+        </div>
+        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card>
+            <CardHeader floated={false} className="relative h-56">
+              <img
+                alt="Carousel Image 3"
+                src="/img/sis.jpeg" // Ruta de la imagen para el tercer item del carrusel
+                className="h-full w-full object-cover"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
+                Clases de sistemas
+              </Typography>
+              <Typography className="font-normal">
+              
+              Aprende programación, redes y seguridad en lecciones prácticas. ¡Únete ahora!
+              </Typography>
+            </CardBody>
+          </Card>
+        </div>
+        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card>
+            <CardHeader floated={false} className="relative h-56">
+              <img
+                alt="Carousel Image 3"
+                src="/img/geo.jpg" // Ruta de la imagen para el tercer item del carrusel
+                className="h-full w-full object-cover"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
+                Clases de geografia
+              </Typography>
+              <Typography className="font-normal">
+              
+             
+                Descubre el mundo con nuestras clases de geografía. Únete ahora.
+              </Typography>
+            </CardBody>
+          </Card>
+        </div>
+        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card>
+            <CardHeader floated={false} className="relative h-56">
+              <img
+                alt="Carousel Image 3"
+                src="/img/bio.jpg" // Ruta de la imagen para el tercer item del carrusel
+                className="h-full w-full object-cover"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
+                Clases de Biologia
+              </Typography>
+              <Typography className="font-normal">
+              
+             
+                Descubre el mundo con nuestras clases de Biologia. Únete ahora.
               </Typography>
             </CardBody>
           </Card>

@@ -92,33 +92,33 @@ Footer.defaultProps = {
     {
       color: "gray",
       name: "twitter",
-      path: "https://github.com/lisbethceron1/web.git",
+      path: "",
     },
     {
       color: "gray",
       name: "youtube",
-      path: "https://github.com/lisbethceron1/web.git",
+      path: "",
     },
     {
       color: "gray",
       name: "instagram",
-      path: "https://github.com/lisbethceron1/web.git",
+      path: "",
     },
     {
       color: "black",
       name: "github",
-      path: "https://github.com/lisbethceron1/web.git",
+      path: "",
     },
   ],
   menus: [
     {
-      name: "Enlaces útiles",
+      name: "Informacion de contacto",
       items: [
-        { name: "Nosotros", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
+        { name: "Lugar "},
+        { name: "Telefono"},
         {
-          name: "Github",
-          path: "https://github.com/lisbethceron1/web.git",
+          name: "Gmail",
+          path: "",
         },
         // {
         //   name: "Free Products",
@@ -127,22 +127,22 @@ Footer.defaultProps = {
       ],
     },
     {
-      name: "Otros Recursos",
+      name: "Aqui",
       items: [
         {
-          name: "Licencia MIT",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+          name: "Sena (CTPI)",
+          path: "",
         },
         {
-          name: "Contribuir",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+          name: "3137031554",
+          path: "",
         },
         {
-          name: "Registro de cambios",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
+          name: "educatio1@gmail.com",
+          path: "",
         },
         {
-          name: "Contáctanos",
+          name: "",
           path: "https://creative-tim.com/contact-us?ref=mtk",
         },
       ],
