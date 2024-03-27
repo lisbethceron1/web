@@ -306,52 +306,6 @@ export function Home() {
     </div>
   </div>
 </section>
-
-<section className="px-4 pt-0 pb-12" style={{ color: "blue" }}>
-  {/* Contact section */}
-  <div className="container mx-auto" style={{ color: "blue" }}>
-    <PageTitle
-      section="Contáctanos"
-      heading="¿Tienes dudas sobre nosotros?"
-      style={{ color: "blue" }}
-    >
-      Completa este formulario y nos pondremos en contacto contigo en 24 horas.
-    </PageTitle>
-    <form className="mx-auto w-full mt-0 lg:w-5/12" style={{ marginBottom: '12px', marginTop: '0' }}>
-      <div className="mb-2 flex gap-2">
-        <Input variant="outlined" size="sm" label="Nombre Completo" />
-        <Input variant="outlined" size="sm" label="Correo Electrónico" />
-      </div>
-      <Textarea variant="outlined" size="sm" label="Mensaje" rows={4} />
-      <Checkbox
-        label={
-          <Typography
-            variant="small"
-            color="gray"
-            className="flex items-center font-normal"
-          >
-            Estoy de acuerdo con los
-            <a
-              href="#"
-              className="font-medium transition-colors hover:text-gray-900"
-            >
-              &nbsp;Términos y Condiciones
-            </a>
-          </Typography>
-        }
-        containerProps={{ className: "-ml-2" }}
-      />
-      <Button variant="gradient" color="blue" size="sm" className="mt-2" fullWidth>
-        Enviar Mensaje
-      </Button>
-    </form>
-  </div>
-</section>
-
-
-      <div className="bg-white">
-        <Footer />
-      </div>
     </>
   );
 }
