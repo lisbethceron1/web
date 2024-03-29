@@ -132,9 +132,6 @@ Navbar.defaultProps = {
       href="https://www.creative-tim.com/product/material-tailwind-kit-react"
       target="_blank"
     >
-      <Button variant="gradient" color="blue" size="sm" fullWidth>
-        Descargar Gratis
-      </Button>
     </a>
   ),
 };

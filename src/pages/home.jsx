@@ -65,22 +65,55 @@ export function Home() {
           </div>
         </div>
       </div>
-      <section className="-mt-32 bg-white px-8 pb-29 pt-8 shadow-${shadowIntensity}  shadow-gray-900/10 rounded-xl">
-        {/* Features section */}
-        <div className="container mx-auto ">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-5 lg:grid-cols-3 ">
-            {featuresData.map(({ color, title, icon, description }) => (
-              <FeatureCard
-                key={title}
-                color={color}
-                title={title}
-                icon={React.createElement(icon, {
-                  className: `w-5 h-9 text-white `,
-                })}
-                description={description}
-              />
-            ))}
+      <section className="-mt-32 bg-white px-8 pb-29 pt-8 shadow-${shadowIntensity} shadow-gray-900/10 rounded-xl ">
+  {/* Features section */}
+  <div className="container mx-auto ">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-5 lg:grid-cols-3 ">
+      {featuresData.map(({ color, title, icon, description }) => (
+        <div
+          key={title}
+          className="feature-card"
+          style={{
+            padding: "20px",
+            border: "1px solid #ccc",
+            borderRadius: "10px",
+            textAlign: "center",
+            transition: "transform 0.3s, box-shadow 0.3s",
+            boxShadow: "none",
+            cursor: "pointer",
+            backgroundColor: "white", 
+            zIndex: 1, 
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "translateY(-5px)";
+            e.currentTarget.style.boxShadow = "0px 10px 15px rgba(0, 0, 0, 0.1)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "translateY(0)";
+            e.currentTarget.style.boxShadow = "none";
+          }}
+        >
+          <div
+            className={`icon ${color}`}
+            style={{
+              width: "50px",
+              height: "50px",
+              margin: "0 auto",
+              borderRadius: "50%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: color === "blue" ? "#3498db" : "",
+              color: color === "blue" ? "white" : "",
+            }}
+          >
+            {React.createElement(icon, { className: "icon-svg", style: { width: "70%", height: "70%" } })}
           </div>
+          <div style={{ fontSize: "1.2em", margin: "10px 0" }}>{title}</div>
+          <div style={{ fontSize: "0.9em" }}>{description}</div>
+        </div>
+      ))}
+    </div>
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12  "  >
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 p-2 text-center " >
