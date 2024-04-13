@@ -2,6 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Admin from "./Admin";
+
 import {
   Card,
   CardBody,
@@ -45,16 +47,23 @@ export function Home() {
       },
     ],
   };
-
+ 
   return (
+    
     <>
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+   
+    <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
         {/* Hero section */}
+         {/* Botón en la parte superior derecha */}
+    <div className="absolute top-4 right-4 ">
+            <Admin />
+          </div>
         <div className="absolute top-0 h-full w-full bg-[url('/img/Educacion.webp')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
+              
               <Typography variant="h1" color="white" className="mb-6 font-black">
                 Educatio
               </Typography>
@@ -63,10 +72,11 @@ export function Home() {
               </Typography>
             </div>
           </div>
+          
         </div>
       </div>
-      <section className="-mt-32 bg-white px-8 pb-29 pt-8 shadow-${shadowIntensity} shadow-gray-900/10 rounded-xl ">
-  {/* Features section */}
+      <section className="-mt-32 bg-white px-8 pb-29 pt-8 shadow-${shadowIntensity} shadow-gray-900/10 rounded-xl">
+        {/* Features section */}
   <div className="container mx-auto ">
     <div className="grid grid-cols-1 gap-6 md:grid-cols-5 lg:grid-cols-3 ">
       {featuresData.map(({ color, title, icon, description }) => (
