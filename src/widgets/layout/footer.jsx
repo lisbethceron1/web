@@ -101,7 +101,7 @@ Footer.defaultProps = {
     {
       color: "gray",
       name: "instagram",
-      path: "",
+      path: "https://www.instagram.com/project_educatio",
     },
     /*{
       color: "black",
