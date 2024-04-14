@@ -145,7 +145,7 @@ export function Home() {
                 <CardHeader floated={false} className="relative h-56">
                   <img
                     alt="Card Image"
-                    src="/img/empresa.jpg"
+                    src="/img/educatio.jpeg"
                     className="h-full w-full"
                   />
                 </CardHeader>
@@ -156,10 +156,10 @@ export function Home() {
                     color="blue-gray"
                     className="mb-3 mt-2 text-blue-600 "
                   >
-                    Servicios de Primera Clase
+                     Equipo de Desarrollo
                   </Typography>
                   <Typography className="font-normal">
-                    En un mundo donde el conocimiento es el motor del progreso, nosotros creamos puentes entre mentes ávidas de aprender y expertos deseosos de enseñar. Con nuestra plataforma, la educación trasciende barreras y se convierte en un viaje colaborativo donde cada experiencia de aprendizaje es única.
+                  Gracias a nuestra dedicación, hemos llevado este proyecto adelante. Como equipo, nos esforzamos por crear una experiencia educativa única para ti. ¡Descubre lo que hemos alcanzado juntos!
                   </Typography>
                 </CardBody>
               </Card>
@@ -208,7 +208,7 @@ export function Home() {
   <div className="container mx-auto" style={{ color: "blue", }}>
     <div style={{ width: "1500px",height:'1px', margin:'10px', }}><br></br><br></br><br></br>
     <PageTitle section="Trabajo en Colaboración" heading="Construyamos algo juntos"><br></br>
-      Educatio facilita la colaboración entre estudiantes y educadores para explorar una variedad de materias y temas. Cada interacción refleja nuestro compromiso colectivo. Juntos, construimos un futuro educativo brillante en Educatio.
+    Educatio facilita la colaboración entre estudiantes y educadores para explorar una variedad de materias y temas. Cada interacción refleja nuestro compromiso colectivo. Juntos, construimos un futuro educativo brillante.
     </PageTitle>
     </div>
     
@@ -236,10 +236,10 @@ export function Home() {
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
-                Clases de Idiomas
+              Clases de Ingles
               </Typography>
               <Typography className="font-normal">
-              Aprende idiomas diseñados para todos los niveles, desde principiantes hasta avanzados
+              Domina el inglés con nosotros: ¡Explora, aprende y brilla en cada clase!
               </Typography>
             </CardBody>
           </Card>
@@ -255,10 +255,10 @@ export function Home() {
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
-                Clases de matematicas
+              Clases de Matemáticas
               </Typography>
               <Typography className="font-normal">
-              Clases de matemáticas adaptadas a todos los niveles, desde primaria hasta secundaria y más allá.
+              Descubre el fascinante mundo de las matemáticas con nosotros: ¡Aprende y domina!
               </Typography>
             </CardBody>
           </Card>
@@ -268,16 +268,16 @@ export function Home() {
             <CardHeader floated={false} className="relative h-56">
               <img
                 alt="Carousel Image 3"
-                src="/img/musica.jpg" // Ruta de la imagen para el tercer item del carrusel
+                src="/img/fisica.jpg" // Ruta de la imagen para el tercer item del carrusel
                 className="h-full w-full object-cover"
               />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
-                Clases de musica
+                Clases de Física
               </Typography>
               <Typography className="font-normal">
-              Clases de música diseñadas para todos los niveles, desde principiantes hasta músicos avanzados.
+              Descubre el universo de la física con nosotros: ¡Aprende y experimenta el poder del conocimiento!
               </Typography>
             </CardBody>
           </Card>
@@ -287,17 +287,77 @@ export function Home() {
             <CardHeader floated={false} className="relative h-56">
               <img
                 alt="Carousel Image 3"
-                src="/img/sis.jpeg" // Ruta de la imagen para el tercer item del carrusel
+                src="/img/quimica.jpg" // Ruta de la imagen para el tercer item del carrusel
                 className="h-full w-full object-cover"
               />
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
-                Clases de sistemas
+                Clases de Química
               </Typography>
               <Typography className="font-normal">
               
-              Aprende programación, redes y seguridad en lecciones prácticas. ¡Únete ahora!
+              Sumérgete en el fascinante mundo de la química con nosotros: ¡Explora, experimenta y despierta tu curiosidad científica!
+              </Typography>
+            </CardBody>
+          </Card>
+        </div>
+        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card>
+            <CardHeader floated={false} className="relative h-56">
+              <img
+                alt="Carousel Image 3"
+                src="/img/historia.jpg" // Ruta de la imagen para el tercer item del carrusel
+                className="h-full w-full object-cover"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
+                Clases de Historia
+              </Typography>
+              <Typography className="font-normal">
+              
+              Viaja en el tiempo con nosotros: Descubre los secretos y las maravillas de la historia.
+              </Typography>
+            </CardBody>
+          </Card>
+        </div>
+        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card>
+            <CardHeader floated={false} className="relative h-56">
+              <img
+                alt="Carousel Image 3"
+                src="/img/literatura.jpg" // Ruta de la imagen para el tercer item del carrusel
+                className="h-full w-full object-cover"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
+                Clases de Literatura
+              </Typography>
+              <Typography className="font-normal">
+              
+              Explora los mundos imaginarios con nosotros: Descubre la magia de la literatura y déjate llevar por historias inolvidables.
+              </Typography>
+            </CardBody>
+          </Card>
+        </div>
+        <div style={{ width: "80%" }}> {/* Ajusta el ancho de las tarjetas dentro del carrusel */}
+          <Card>
+            <CardHeader floated={false} className="relative h-56">
+              <img
+                alt="Carousel Image 3"
+                src="/img/economia.jpg" // Ruta de la imagen para el tercer item del carrusel
+                className="h-full w-full object-cover"
+              />
+            </CardHeader>
+            <CardBody>
+              <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
+                Clases de Economia
+              </Typography>
+              <Typography className="font-normal">
+              
+              Descubre el poder del dinero y los mercados con nosotros: Aprende los secretos de la economía y toma el control de tu futuro financiero.
               </Typography>
             </CardBody>
           </Card>
@@ -313,12 +373,12 @@ export function Home() {
             </CardHeader>
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-3 mt-2 text-blue-600">
-                Clases de geografia
+                Clases de Geografia
               </Typography>
               <Typography className="font-normal">
               
              
-                Descubre el mundo con nuestras clases de geografía. Únete ahora.
+              Explora el mundo con nosotros: Descubre los paisajes, culturas y fenómenos naturales de la geografía en cada clase.
               </Typography>
             </CardBody>
           </Card>
@@ -339,7 +399,7 @@ export function Home() {
               <Typography className="font-normal">
               
              
-                Descubre el mundo con nuestras clases de Biologia. Únete ahora.
+              Sumérgete en el fascinante mundo de la biología con nosotros: Explora la vida en todas sus formas y despierta tu curiosidad científica.
               </Typography>
             </CardBody>
           </Card>
@@ -349,6 +409,9 @@ export function Home() {
     </div>
   </div>
 </section>
+<div className="bg-white">
+        <Footer />
+      </div>
     </>
   );
 }

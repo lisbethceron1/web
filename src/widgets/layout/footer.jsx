@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
-    <footer className="relative px-1 pt-5 pb-7 rounded-lg shadow-xl"  style={{ backgroundImage: `url('../../../public/img/fondo.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', color: 'white',boxShadow: '0px 10px 15px -3px rgba(4, 0, 0, 0.6), 0px 4px 6px -2px rgba(4, 0, 0, 0.09)'  }}>
+    <footer className="relative px-1 pt-5 pb-7 rounded-lg shadow-xl" style={{ backgroundColor: '#2183EB', color: 'white', boxShadow: '0px 10px 15px -3px rgba(4, 0, 0, 0.6), 0px 4px 6px -2px rgba(4, 0, 0, 0.09)' }}>
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
@@ -85,11 +85,10 @@ export function Footer({ title, description, socials, menus, copyright }) {
 }
 
 Footer.defaultProps = {
-  title: "Material Educatio",
-  description:
-    "Encuéntranos en nuestras diferentes redes sociales.",
+  title:
+    <h4>Encuéntranos en nuestra red social</h4>,
   socials: [
-    {
+   /* {
       color: "gray",
       name: "twitter",
       path: "",
@@ -98,28 +97,28 @@ Footer.defaultProps = {
       color: "gray",
       name: "youtube",
       path: "",
-    },
+    },*/
     {
       color: "gray",
       name: "instagram",
       path: "",
     },
-    {
+    /*{
       color: "black",
       name: "github",
       path: "",
-    },
+    },*/
   ],
   menus: [
     {
       name: "Informacion de contacto",
       items: [
         { name: "Lugar "},
-        { name: "Telefono"},
+         /*{ name: "Telefono"},
         {
           name: "Gmail",
           path: "",
-        },
+        },*/
         // {
         //   name: "Free Products",
         //   path: "https://www.creative-tim.com/templates/free?ref=mtk",
@@ -133,7 +132,7 @@ Footer.defaultProps = {
           name: "Sena (CTPI)",
           path: "",
         },
-        {
+        /*{
           name: "3137031554",
           path: "",
         },
@@ -144,21 +143,13 @@ Footer.defaultProps = {
         {
           name: "",
           path: "https://creative-tim.com/contact-us?ref=mtk",
-        },
+        },*/
       ],
     },
   ],
   copyright: (
     <>
-      Copyright © {year} Educatio by{"  "}
-      <a
-        href="https://github.com/lisbethceron1/web.git"
-        target="_blank"
-        className="text-blue-gray-500 transition-colors hover:text-blue-500"
-      >
-         Team
-      </a>
-      .
+      Copyright © {year} Educatio 
     </>
   ),
 };

@@ -1,8 +1,8 @@
 export const teamData = [
   {
     img: "/img/equipo.jpg",
-    name: "Nosotros",
-    position: "Descubre una nueva forma de aprender con  clases personalizadas y flexibilidad total, te ofrecemos la oportunidad de crecer académicamente a tu ritmo . ",
+    name: "Postulaciones",
+    position: "Los docentes podrán postularse para atender las solicitudes de nuestros usuarios, asegurando así una experiencia de enseñanza personalizada y efectiva.",
     socials: [
       
     ],
